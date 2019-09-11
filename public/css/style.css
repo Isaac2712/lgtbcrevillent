@@ -1,0 +1,292 @@
+/* COLORES
+	lila oscuro --> #4B088A;
+	lila menos oscuro --> #380B61;
+	lila claro --> #9E5CDC;
+	amarillo claro --> #FFF1CC;
+	azul oscuro --> #4169E1; (links menu administrador y titulos pagina administrador)
+	gris claro --> #CAC8C8; (bordes arriba y abajo en gris para cuando hacemos :hover 
+							  en las redes sociales del pie de pagina)
+*/
+
+@font-face{
+	font-family: 'lobster';
+    src: url('../favicon/webfonts/Lato/Lato-Regular.ttf') format('ttf');
+}
+
+*{
+	box-sizing: border-box;
+	font-family: 'lobster';
+	font-size: 14px;
+}
+/* ------------- */
+/* QUIENES SOMOS */
+/* ------------- */
+#articulo-quienes-somos p{
+	font-size: 20px;
+}
+
+/* ----------- */
+/* MANIFIESTOS */
+/* ----------- */
+
+/*Borde izquierdo lila */
+#bloque-manifiestos{
+	border-left: 2px solid #4B088A;
+	padding-left: 20px;
+}
+
+/* --------- */
+/*  COOKIES */
+/* --------- */
+#section_cookies{
+	position: fixed;
+	bottom: -15px;
+	left: 0px;
+	width: 100%;
+	z-index: 999999;
+	display: block;
+	color: white;
+	background-color: #343A40;
+}
+
+#info_cookies{
+	padding: 2px ;
+	position: relative;
+	top: 0px;
+	width: 100%;
+}
+
+/* Boton de la seccion de cookies en lila */
+#section_cookies button{
+	background-color: #9E5CDC;
+}
+
+.link-menu-principal{
+	background-color: #4B088A; /*Color de fondo lila*/
+	font-weight: bold; /*En negrita*/
+	border-radius: 5px; /*Un borde redondo*/
+}
+
+/*Cuando pasamos por encima de los items del menu, se le añade este estilo*/
+.li-menu-principal:hover{
+	background-color: #380B61;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+/*HR y H2 de los titulos evento y noticias*/
+.h2-title{
+	color: #4B088A;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.hr-title{
+	width: 5%;
+	border: 1px solid #4B088A;
+}
+
+.hover-titulo:hover{
+	background-color: #FFF1CC;
+}
+
+.hover-titulo:hover .h2-title{
+	/*color: white;*/
+}
+
+.hover-titulo:hover .hr-title{
+	/*border: 1px solid white;*/
+}
+
+/*Boton de los eventos de página de inicio*/
+.boton-even{
+	background-color: #380B61;
+}
+
+.boton-even:hover{
+	background-color: #9E5CDC;
+}
+
+/*Imagenes de los eventos en la pagina principal*/
+#imagenes-eventos{
+	width: 70%;
+	height: 200px;
+}
+
+/*Imagenes de las noticias en la pagina principal*/
+#imagenes-noticias{
+   	width: 100%;
+}
+
+/*Input de la página registro cuando esta vacio*/
+.input-registro-vacio{
+	border: 2px solid red;
+}
+
+/*Input de la página registro cuando no esta vacio*/
+.input-registro-ok{
+	border: 2px solid green;
+}
+
+/*Input de la página registro*/
+.input-registro{
+	border: none;
+}
+
+/* Pagina de información de eventos, texto sacado de bdd */
+.texto-info-eventos{
+	word-wrap: break-word;
+	font-family: 'lobster';
+}
+
+/* PIE DE PAGINA */
+.header-footer{
+	background-color: #4B088A; 
+	color: white;
+}
+
+.header-footer-2{
+	background-color: #FFF1CC; 
+	color: black;
+	border-top: 1px solid #CAC8C8;
+	border-bottom: 1px solid #CAC8C8;
+}
+
+#icono-redes-sociales-footer{
+	color: white;
+}
+
+#icono-redes-sociales-footer:hover{
+	color: #4B088A;
+}
+
+#formulario_nueva_contraseña, #formulario_nueva_contraseña input, #formulario_nueva_contraseña span, 
+#seccion_cambiar_contrasena, #seccion_cambiar_contrasena input, #seccion_cambiar_contrasena span,
+#span_cambiar_contrasena{
+	font-size: 12px;
+}
+
+/* -------------------- */
+/* Pagina Administrador */
+/* -------------------- */
+
+.hover-menu-administrador a:hover{
+	background-color: #4169E1;
+}
+
+/*Boton del menu de la pagina administrador donde añadimos, eliminamos y modificamos eventos,
+noticias, manifiestos y usuarios. */
+#boton-menu-pag-admin{
+	display: none;
+}
+
+#menu-pag-admin{
+	width: 25%;
+}
+
+#formulario-pag-admin{
+	width: 75%;
+}
+
+/* Titulo de los formularios Ej: eliminar eventos*/
+.titulo-formulario{
+	color: #4169E1;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*Div de resultado_definitivo_eliminar*/
+.definitivo_eliminar{
+	display: none;
+}
+
+
+/*Tabla de usuarios con fuente mas pequeña*/
+#tabla_usuarios{
+	font-size: 13px;
+}
+
+@media (max-width: 765px){
+	*{
+		box-sizing: border-box;
+		font-family: 'lobster';
+		font-size: 18px;
+	}
+	
+	/*imagenes de los eventos*/
+    #imagenes-eventos{
+    	width: 90%;
+    	height: 250px;
+    }
+
+	/*Boton del menu de la pagina administrador donde añadimos, eliminamos y modificamos eventos,
+	noticias, manifiestos y usuarios. */
+	#boton-menu-pag-admin{
+		display: block;
+	}
+
+	#formulario_usuarios input, #formulario_usuarios span, #select_user, #boton_user {
+		font-size: 13px;
+	}
+
+	/*Ocultamos el input que dice que tipo de usuario eres cuando la pantalla se hace mas pequeña*/
+	#input_tipo_usuario{
+		display: none;
+	}
+
+	#formulario_nueva_contraseña, #formulario_nueva_contraseña input, #formulario_nueva_contraseña span, 
+	#seccion_cambiar_contrasena, #seccion_cambiar_contrasena input, #seccion_cambiar_contrasena span,
+	#span_cambiar_contrasena{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 1000px) { /*Cuando la resolucion de la pantalla es de 1000 o menos*/
+	#menu-pag-admin{ /*El menu ocupa toda la pantalla*/
+		width: 100%;
+	}
+
+	#formulario-pag-admin{ /*El formulario ocupa toda la pantalla, debajo del menu*/
+		width: 100%;
+	}
+
+	.titulo-formulario{ /*El titulo del formulario contiene una letra mas pequeña*/
+		font-size: 20px;
+	}
+}
+
+/* Margen izquierdo y derecho para pantallas grandes*/
+@media (min-width: 1400px){
+    #app{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+
+@media (min-width: 1500px){
+    #app{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+@media (min-width: 1700px){
+    #app{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+
+
+@media(min-width: 1900px){
+    #app{
+        width: 40%;
+        margin: auto;
+    }
+}
