@@ -21,7 +21,7 @@
 						<input type="hidden" name="id_usuario" value="{{  $usuario->id }}">
 						<div class="form-group col-md-12 col-lg-6">
 							<label for="nick">Nick name del usuario </label>
-					      	<input type="text" class="form-control" id="nick" name="nick" placeholder="nick name del usuario" value="{{ $usuario->nick }}" required>
+					      	<input type="text" class="form-control" id="nick" name="nick" placeholder="Nick name del usuario" value="{{ $usuario->nick }}" required>
 					    </div>
 
 						<div class="form-group col-md-12 col-lg-6">
@@ -31,22 +31,22 @@
 
 					    <div class="form-group col-md-12 col-lg-6">
 					    	<label for="email">E-mail del usuario </label>
-					      	<input type="email" class="form-control" id="email" name="email" placeholder="correo electronico del usuario" value="{{ $usuario->email }}" required>
+					      	<input type="email" class="form-control" id="email" name="email" placeholder="Correo electronico del usuario" value="{{ $usuario->email }}" required>
 					    </div>
 
 					    <div class="form-group col-md-12 col-lg-6">
 					    	<label for="fecha_nacimiento">Fecha de nacimiento del usuario </label>
-					      	<input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="fecha de nacimiento del usuario" value="{{ $usuario->fecha_nacimiento }}" required>
+					      	<input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento del usuario" value="{{ $usuario->fecha_nacimiento }}" required>
 					    </div>
 
 					    <div class="form-group col-md-12 col-lg-6">
 					    	<label for="sexo">Sexo del usuario </label>
-					      	<input type="text" class="form-control" id="sexo" name="sexo" placeholder="sexo del usuario del usuario" value="{{ $usuario->sexo }}" required>
+					      	<input type="text" class="form-control" id="sexo" name="sexo" placeholder="Sexo del usuario" value="{{ $usuario->sexo }}" required>
 					    </div>
 
 					    <div class="form-group col-md-12 col-lg-6">
 					    	<label for="tipo">Tipo de usuario </label>
-					      	<input type="text" class="form-control" id="tipo" name="tipo" placeholder="tipo de usuario" value="{{ $usuario->tipo }}" disabled>
+					      	<input type="text" class="form-control" id="tipo" name="tipo" placeholder="Tipo de usuario" value="{{ $usuario->tipo }}" disabled>
 					    </div>
 
 						<div class="form-group col-md-12 mt-1">
@@ -88,7 +88,7 @@
 
 				  		<div id="div_provincia" class="form-group col-md-12 col-lg-6">
 						    <label for="provincia_1">Provincia del usuario </label>
-						     <input type="text" class="form-control" id="provincia_1" name="provincia_1" placeholder="provincia" onclick="return mostrarSelectProvinciaMunicipio()" value="<?= $provincia[0]['provincia']?>" required>
+						     <input type="text" class="form-control" id="provincia_1" name="provincia_1" placeholder="Provincia" onclick="return mostrarSelectProvinciaMunicipio()" value="<?= $provincia[0]['provincia']?>" required>
 						</div>
 
 					    <div id="div_provincia_2" class="form-group col-md-12 col-lg-6">
@@ -106,7 +106,7 @@
 
 					    <div id="div_municipio" class="form-group col-md-12 col-lg-6">
 					    	<label for="municipio">Municipio del usuario </label>
-					      	<input type="text" class="form-control" id="municipio" name="municipio" placeholder="municipio" value="<?= $municipio[0]['municipio']?>" required>
+					      	<input type="text" class="form-control" id="municipio" name="municipio" placeholder="Municipio" value="<?= $municipio[0]['municipio']?>" required>
 					    </div>
 
 					    <div id="div_municipios_2" class="form-group col-md-12 col-lg-6">
