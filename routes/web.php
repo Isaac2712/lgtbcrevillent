@@ -16,7 +16,7 @@ Route::get('/', ['as' => 'home', 'uses' => 'PagesController@RouteHome']);
 //Desconectar
 Route::post('/desconectar', ['as' => 'desconectar' , 'uses' => 'Usuarios\ControllerUsuario@Desconectar']);
 
-//Pagina para acceder
+//Pagina para <acceder></acceder>
 Route::get('/acceder', ['as' => 'acceder', 'uses' => 'Usuarios\ControllerUsuario@RouteAcceder']);
 
 //Pagina para acceder

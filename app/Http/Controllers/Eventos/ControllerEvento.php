@@ -31,7 +31,7 @@ class ControllerEvento extends Controller
 
     public function RouteNuevoEvento()
     {
-        return view('Eventos/añadir_evento');
+        return view('Eventos/anadir_evento');
     }
 
 	public function anadirEvento(Request $request)
