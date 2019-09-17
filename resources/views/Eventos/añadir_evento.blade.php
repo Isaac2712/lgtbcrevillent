@@ -39,6 +39,14 @@
       <input type="date" class="form-control" id="fecha_evento" name="fecha_evento" placeholder="Fecha" value="">
     </div>
 
+    <div class="form-group">
+      <select name="tipo_evento" multiple>
+        <option value="charla">Charla</option>
+        <option value="charla">Charla</option>
+        <option value="charla">Charla</option>
+      </select>
+    </div>
+
     <div id="imagen_evento">
       <div class="custom-file">
         <input type="file" class="custom-file-input" id="imagen_evento" name="imagen_evento" required>
