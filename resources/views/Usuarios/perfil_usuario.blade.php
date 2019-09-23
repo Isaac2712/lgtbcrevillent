@@ -12,11 +12,14 @@
 			  <li class="nav-item">
 			    <a class="nav-link" id="prov_mun-tab" data-toggle="tab" href="#prov_mun" role="tab" aria-controls="prov_mun" aria-selected="false">Modificar provincia y municipio</a>
 			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="eli_usu-tab" data-toggle="tab" href="#eli_usu" role="tab" aria-controls="eli_usu" aria-selected="false">Eliminar usuario</a>
+			  </li>
 			</ul>
 			<div class="tab-content" id="myTabContent">
 			  	<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 			  		<h6 class="font-weight-bold mt-3 pb-2 text-center"> Informacion basica del usuario </h6>
-					<form role="form" id="formulario_mi_perfil" method="POST" action="{{ url('/mi_perfil/guardar_nuevos_datos') }}" class="row">
+					<form role="form" id="formulario_mi_perfil_info_usu" method="POST" action="{{ url('/mi_perfil/guardar_nuevos_datos') }}" class="row">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<input type="hidden" name="id_usuario" value="{{  $usuario->id }}">
 						<div class="form-group col-md-12 col-lg-6">
@@ -57,7 +60,7 @@
 				</div>
 				<div class="tab-pane fade pb-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 			  		<h6 class="font-weight-bold mt-3 pb-2 text-center"> Modificar contraseña </h6>
-			  		<form role="form" id="formulario_mi_perfil" method="POST" action="{{ url('/mi_perfil/guardar_nueva_contrasena') }}" class="row">
+			  		<form role="form" id="formulario_mi_perfil_contrasena" method="POST" action="{{ url('/mi_perfil/guardar_nueva_contrasena') }}" class="row">
 				  		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<input type="hidden" name="id_usuario" value="{{  $usuario->id }}">
 					  	<div class="form-group col-md-12 col-lg-6">
@@ -82,7 +85,7 @@
 				</div>
 				<div class="tab-pane fade pb-4" id="prov_mun" role="tabpanel" aria-labelledby="prov_mun-tab">
 				  	<h6 class="font-weight-bold mt-3 pb-2 text-center"> Modificar provincia y municipio </h6>
-				  	<form role="form" id="formulario_mi_perfil" method="POST" action="{{ url('/mi_perfil/guardar_provincia_municipio') }}" class="row">
+				  	<form role="form" id="formulario_mi_perfil_provincia_municipio" method="POST" action="{{ url('/mi_perfil/guardar_provincia_municipio') }}" class="row">
 				  		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<input type="hidden" name="id_usuario" value="{{  $usuario->id }}">
 
@@ -124,6 +127,20 @@
 					    </div>
 			        </form>
 		        </div>
+		        <!--  Nuevo añadido 23-9-19 Isaac -->
+		        <div class="tab-pane fade pb-4" id="eli_usu" role="tabpanel" aria-labelledby="eli_usu-tab">
+			  		<h6 class="font-weight-bold mt-3 pb-2 text-center"> Eliminar usuario </h6>
+			  		<form role="form" id="formulario_mi_perfil_eli_usu" method="POST" action="{{ url('/mi_perfil/eliminar_usuario') }}" class="row">
+			  			<input type="hidden" name="_token" value="{{ csrf_token() }}">
+			  			<input type="hidden" name="id_usuario" value="{{  $usuario->id }}">
+			  			<p class="m-2"> Si eliminas tu usuario, podrias perder todos tus datos y para volver a tener un perfil con LGTBCrevillent tendrás que volver a registrarte. </p>
+			  			<div class="form-group col-md-12 col-lg-6"></div>
+				    	<div class="form-group col-md-12">
+					    	<input type="submit" class="btn btn-outline-danger float-right" value="Eliminar usuario"> 
+					    </div>
+					</form>
+				</div>
+				<!-- /FIN nuevo añadido 23-9-19 Isaac -->
 			</div>
 		</article>
 	</section>

@@ -15,6 +15,13 @@ use App\Http\Models\Municipios\ModelMunicipio;
 class ControllerUsuario extends Controller
 {
 
+    public function eliminarUsuarioPorUsuario(Request $request)
+    {
+        session_unset(); //quitamos la sesion del usuario
+        ModelUsuario::where('id', $request->input('id_usuario'))->delete(); //eliminamos usuario
+        return redirect('acceder'); //enviamos a vista registrarse
+    }
+
     public function GuardarProvinciaMunicipio(Request $request)
     {
         if(trim($request->input('id_usuario')) != '' && trim($request->input('provincia')) != '' && trim($request->input('municipio')) != '')

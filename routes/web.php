@@ -178,6 +178,9 @@ Route::post('/mi_perfil/guardar_nueva_contrasena', 'Usuarios\ControllerUsuario@G
 //Ruta para guardar la provincia y el municipio modificado por el usuario en mi perfil
 Route::post('/mi_perfil/guardar_provincia_municipio', 'Usuarios\ControllerUsuario@GuardarProvinciaMunicipio');
 
+//Ruta para eliminar usuario
+Route::post('/mi_perfil/eliminar_usuario', 'Usuarios\ControllerUsuario@eliminarUsuarioPorUsuario');
+
 /* ---------------- */
 /*  PIE DE PAGINA  */
 /* ---------------- */
