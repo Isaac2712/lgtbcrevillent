@@ -38,7 +38,7 @@ class ControllerEvento extends Controller
 	{
 		$devuelve['ok'] = 0;
 		//Si ningun input esta vacio
-		if(trim($request->input('titulo_evento')) != '' && trim($request->input('localidad_evento')) != ''&& trim($request->input('texto_evento')) != '' && trim($request->input('lugar_evento')) != "" && trim($request->input('direccion_evento')) != '' && trim($request->input('telefono_evento')) != '' && trim($request->input('horario_evento')) != '' && trim($request->input('fecha_evento')) != '')
+		if(trim($request->input('titulo_evento')) != '' && trim($request->input('localidad_evento')) != ''&& trim($request->input('texto_evento')) != '' && trim($request->input('lugar_evento')) != "" && trim($request->input('direccion_evento')) != '' && trim($request->input('telefono_evento')) != '' && trim($request->input('horario_evento')) != '' && trim($request->input('fecha_evento')) != '' && trim($request->input('select_tipo_evento')) != '')
         {   
             //Comprobamos que el titulo que añaidmos nuevo sea distinto a otros titulos de la bdd
             $evento_bdd = ModelEvento::where('titulo', $request->input('titulo_evento'))->get();
@@ -54,6 +54,7 @@ class ControllerEvento extends Controller
                 $nuevo_evento->telefono=$request->input('telefono_evento');
                 $nuevo_evento->horario=$request->input('horario_evento');
                 $nuevo_evento->fecha=$request->input('fecha_evento');
+                $nuevo_evento->tipo=$request->input('select_tipo_evento'); //nuevo 23-9-19
                 if ($request->hasFile('file')) //Si recibimos el file que es de la imagen
     		    {
     		      $file = $request->file('file');

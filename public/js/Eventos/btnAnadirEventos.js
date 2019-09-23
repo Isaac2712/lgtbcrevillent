@@ -9,6 +9,8 @@ function btnAnadirEvento()
   var horario_evento=jQuery("[name=horario_evento]").val();
   var fecha_evento=jQuery("[name=fecha_evento]").val();
   var imagen_evento=jQuery("[name=imagen_evento]").val();
+  var select_tipo_evento=jQuery("[name=select_tipo_evento]").val();
+  console.log(select_tipo_evento);
   var _token = jQuery("[name=_token]").val();
   var vacio = false;
 
@@ -149,6 +151,21 @@ function btnAnadirEvento()
 
   /* FIN IMAGEN DEL EVENTO */
 
+  /* TIPO DE EVENTO */
+
+  if(select_tipo_evento == '')
+  {
+    $('#select_tipo_evento').removeClass("input-registro-ok"); //Quitamos la clase del input relleno (quitamos color verde)
+    $('#select_tipo_evento').addClass("input-registro-vacio"); //Añadimos clase de input vacio (añadimos color rojo)
+    vacio = true;
+  }
+  else
+  {
+    $('#select_tipo_evento').addClass("input-registro-ok"); //Añadimos la clase del input relleno (añadimos color verde)
+  }
+
+  /* FIN TIPO DE EVENTO */
+
   var formData = new FormData();
   formData.append('_token', _token);
   formData.append('titulo_evento', titulo_evento);
@@ -159,6 +176,7 @@ function btnAnadirEvento()
   formData.append('horario_evento', horario_evento);
   formData.append('fecha_evento', fecha_evento);
   formData.append('direccion_evento', direccion_evento);
+  formData.append('select_tipo_evento', select_tipo_evento);
   var file = jQuery('.custom-file-input');
   formData.append("file", file[0].files[0]);
 

@@ -40,10 +40,14 @@
     </div>
 
     <div class="form-group">
-      <select name="tipo_evento" multiple>
-        <option value="charla">Charla</option>
-        <option value="charla">Charla</option>
-        <option value="charla">Charla</option>
+      <section class="input-group">
+      <select class="custom-select" id="select_tipo_evento" name="select_tipo_evento">
+        <option value='' selected>Selecciona el tipo de evento</option>
+        <option value='actividades'>Actividades</option>
+        <option value='mesaredonda'>Mesa redonda</option>
+        <option value='aniversario'>Aniversario</option>
+        <option value='concentracion'>Concentración</option>
+        <option value='otros'>Otros</option>
       </select>
     </div>
 
