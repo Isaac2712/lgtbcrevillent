@@ -2,7 +2,19 @@
 @section('contenido')
 <section class="container mt-5 mb-5">
     <h3> Recupera tu cuenta </h3>
-    <section id="app" class="col-md-7 col-lg-5 m-auto">
+<?php
+    if(isset($mensaje))
+    {
+?>
+    <div id="buscar_email_error" class="p-2 col-md-7 col-lg-5 m-auto"> <a href="/registrarse"> {{ $mensaje }} </a> </div>
+<?php
+    }
+    else
+    {
+        $mensaje = "";
+    }
+?>
+    <section id="app" class="col-md-7 col-lg-5 m-auto pt-3">
         <span id="span_cambiar_contrasena" class="pb-3">Introduce tu correo electronico para poder recuperar tu cuenta</span>
         <section id="seccion_cambiar_contrasena">
             <form action="{{ url('/acceder/buscar_email') }}" method="POST">

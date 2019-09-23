@@ -166,6 +166,11 @@
 	font-size: 12px;
 }
 
+#buscar_email_error{
+	border: 2px solid red;
+	background-color: #FFDFDF;
+}
+
 /* -------------------- */
 /* Pagina Administrador */
 /* -------------------- */

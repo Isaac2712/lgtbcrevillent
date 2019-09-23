@@ -261,7 +261,7 @@ class ControllerUsuario extends Controller
             return view('nueva_contraseña', ['email' => $email]);
         }
 
-        return view('cambiar_contraseña', ['mensaje' => 'no existe ese correo, crea un nuevo usuario']);
+        return view('cambiar_contraseña', ['mensaje' => 'No existe el email del usuario, crea un nuevo usuario.']);
     }
 
     public function cambiarContraseña(Request $request)

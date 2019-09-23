@@ -8,7 +8,7 @@
         <input type="hidden" name="id_usuario" value="<?= $email[0]['id']; ?>">
         <div class="input-group mt-2 mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text font-weight-bold" id="contraseña">nueva contraseña</span>
+                <span class="input-group-text font-weight-bold" id="contraseña">Nueva contraseña</span>
             </div>
             <input type="password" class="form-control" id="contraseña_1" name="contraseña" value="" aria-label="contraseña" aria-describedby="contraseña">  
         </div>
@@ -16,13 +16,13 @@
 
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text font-weight-bold" id="contraseña2">repetir contraseña2</span>
+                <span class="input-group-text font-weight-bold" id="contraseña2">Repetir contraseña</span>
             </div>
             <input type="password" class="form-control" id="contraseña_2" name="contraseña2" value="" aria-label="contraseña2" aria-describedby="contraseña2">
         </div>
         <aside id="div_contraseña2"></aside>
         <aside id="contraseñas_distintas"></aside>
-        <button type="button" onclick="return btnCambiarContraseña()" class="btn btn-primary btn-sm"> guardar nueva contraseña </button>
+        <button type="button" onclick="return btnCambiarContraseña()" class="btn btn-primary btn-sm"> Guardar nueva contraseña </button>
     </form>
     <aside id="resultado_cambiar_contraseña"></aside>
 </section>
