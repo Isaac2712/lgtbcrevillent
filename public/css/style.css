@@ -9,13 +9,15 @@
 */
 
 @font-face{
-	font-family: 'lobster';
-    src: url('../favicon/webfonts/Lato/Lato-Regular.ttf') format('ttf');
+	font-family: 'Monserrat';
+    src: url('../font/Monserrat/ribeyemarrow-regular-webfont.woff2') format('woff2'),
+         url('../font/Monserrat/ribeyemarrow-regular-webfont.woff') format('woff');
+
 }
 
 *{
 	box-sizing: border-box;
-	font-family: 'lobster';
+	font-family: 'Monserrat';
 	font-size: 14px;
 }
 /* ------------- */
@@ -136,7 +138,7 @@
 /* Pagina de información de eventos, texto sacado de bdd */
 .texto-info-eventos{
 	word-wrap: break-word;
-	font-family: 'lobster';
+	font-family: 'Monserrat';
 }
 
 /* PIE DE PAGINA */
@@ -215,7 +217,7 @@ noticias, manifiestos y usuarios. */
 @media (max-width: 765px){
 	*{
 		box-sizing: border-box;
-		font-family: 'lobster';
+		font-family: 'Monserrat';
 		font-size: 18px;
 	}
 	

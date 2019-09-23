@@ -146,10 +146,10 @@
       <section class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
         <h6 class="text-uppercase font-weight-bold">Contacto</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p><i class="fas fa-home mr-3"></i> Plaça Dr. Mas Candela, 15, 03330 Crevillent, Alacant</p>
-        <p><i class="fas fa-envelope mr-3"></i> lgtbcrevillent@gmail.com </p>
-        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+        <p><i class="fas fa-home mr-3"></i><a href="{{ route('contacto') }}">Plaça Dr. Mas Candela, 15, 03330 Crevillent, Alacant</a></p>
+        <p><i class="fas fa-envelope mr-3"></i><a href='mailto:lgtbcrevillent@hotmail.com'>lgtbcrevillent@hotmail.com</a></p>
+        <p><i class="fas fa-phone mr-3"></i> +34 687 63 20 97</p>
+        <p><i class="fas fa-phone mr-3"></i> +34 658 92 51 26</p>
       </section>
     </section>
   </section>
