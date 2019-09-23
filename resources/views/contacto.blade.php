@@ -2,7 +2,8 @@
 @section('contenido')
 	<header class="container">
         <section>
-        	<header class="hover-titulo">
+        	<!--<header class="hover-titulo">-->
+            <header><!-- modificado 23-9-19 Isaac -->
 	        	<hr class="mt-5">
 	        	<aside class="col-lg-12 text-center">
 	                <h2 class="h2-title">lgtbcrevillent</h2>
@@ -13,7 +14,8 @@
             <main>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.3689364316306!2d-0.8093943846686926!3d38.24774857967619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b96ba71ce7eb%3A0xd0c9e28cb9ba0256!2sPla%C3%A7a+Dr.+Mas+Candela%2C+15%2C+03330+Crevillent%2C+Alicante!5e0!3m2!1ses!2ses!4v1525106434206" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </main>
-            <footer class="hover-titulo">
+             <!--<footer class="hover-titulo">-->
+            <footer><!-- modificado 23-9-19 Isaac -->
 	            <hr class="mt-5">
 	            <aside class="col-lg-12 text-center mb-4">
 	                <h2 class="h2-title">Contactenos</h2>

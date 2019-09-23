@@ -1,7 +1,8 @@
 @extends('layout')
 @section('contenido')
 <section class="container mt-5">
-    <header class="hover-titulo">
+    <!--<header class="hover-titulo">-->
+    <header><!-- modificado 23-9-19 Isaac -->
     <hr class="mt-5">
     <main class="row">
         <aside class="col-lg-12 text-center">
@@ -26,7 +27,6 @@
            Esta Asociación, pionera en Crevillent, supondrá el apoyo y soporte para todo aquel que se sienta solo, desubicado o con cualquier otra inquietud.
         </p>
     </article>
-    <p class="small float-right"> Hecho por Isaac Marroquí </p>
 </section>
 <section class="container mt-5 mb-5">
     <aside class="embed-responsive embed-responsive-21by9">

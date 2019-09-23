@@ -2,7 +2,8 @@
 @section('contenido')
 <!-- SECCION DE EVENTOS -->
 <section class="container-fluid">
-    <header class="container-fluid hover-titulo">
+    <!-- <header class="container-fluid hover-titulo"> -->
+    <header class="container-fluid"> <!--modificado 23-9-19 Isaac-->
     <hr class="mt-5">
     <main class="row">
         <aside class="col-lg-12 text-center">
@@ -105,7 +106,8 @@
 
 <!-- SECCION DE NOTICIAS -->
 <section class="container-fluid">
-    <header class="container-fluid hover-titulo">
+    <!-- <header class="container-fluid hover-titulo"> -->
+    <header class="container-fluid"> <!--modificado 23-9-19 Isaac-->
     <hr class="mt-5">
     <main class="row">
         <aside class="col-lg-12 text-center">
