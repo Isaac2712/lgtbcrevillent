@@ -10,6 +10,35 @@ use App\Http\Models\Eventos\ModelEvento;
 
 class ControllerEvento extends Controller
 {
+    public function concentraciones(Request $request)
+    {
+        $concentraciones = ModelEvento::where('tipo', 'concentracion')->get();
+        return view('Eventos/concentraciones', ['concentraciones' => $concentraciones]);
+    }
+
+    public function actividades(Request $request)
+    {
+        $actividades = ModelEvento::where('tipo', 'actividades')->get();
+        return view('Eventos/actividades', ['actividades' => $actividades]);
+    }
+
+    public function mesaredonda(Request $request)
+    {
+        $mesaredonda = ModelEvento::where('tipo', 'mesaredonda')->get();
+        return view('Eventos/mesaredonda', ['mesaredonda' => $mesaredonda]);
+    }
+
+    public function aniversario(Request $request)
+    {
+        $aniversario = ModelEvento::where('tipo', 'aniversario')->get();
+        return view('Eventos/aniversario', ['aniversario' => $aniversario]);
+    }
+
+    public function otros(Request $request)
+    {
+        $otros = ModelEvento::where('tipo', 'otros')->get();
+        return view('Eventos/otros', ['otros' => $otros]);
+    }
 
     public function RouteInfoEventos($titulo_evento)
     {

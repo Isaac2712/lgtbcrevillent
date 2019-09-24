@@ -24,15 +24,16 @@
 	    <main class="">
 	    	<?php 
 	            //Abrimos la carpeta Eventos
-	            $directory="imagenes/Eventos/";
+	    		$carpeta = "../imagenes/Eventos/";
+	            $directory="imagenes/Eventos";
 	            $dirint = dir($directory);
 	            while (($archivo = $dirint->read()) !== false) 
 	            {
 	                if($archivo == $imagen_evento)
 	                { 
 	            ?>
-	                <a href="<?= $directory."/".$archivo?>" target="_blank">
-	                <img class="rounded img-fluid img-thumbnail" src="<?= $directory."/".$archivo?>" title="<?= $archivo ?>" style="max-width: 50%;">
+	                <a href="<?= $carpeta.$archivo ?>" target="_blank">
+	                <img class="rounded img-fluid img-thumbnail" src="<?= $carpeta.$archivo ?>" title="<?= $archivo ?>" style="max-width: 50%;">
 	                </a>
 	        <?php
 	               }

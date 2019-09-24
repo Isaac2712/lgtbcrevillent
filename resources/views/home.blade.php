@@ -2,8 +2,7 @@
 @section('contenido')
 <!-- SECCION DE EVENTOS -->
 <section class="container-fluid">
-    <!-- <header class="container-fluid hover-titulo"> -->
-    <header class="container-fluid"> <!--modificado 23-9-19 Isaac-->
+    <header class="container-fluid">
     <hr class="mt-5">
     <main class="row">
         <aside class="col-lg-12 text-center">
@@ -14,90 +13,38 @@
     <hr class="mb-5">
     </header>
     <main class="container-fluid">
-        <article id="artEven" class="row">       
-        <?php  
+        <article class="row"> 
+         <?php  
+            $tipo_evento = array('concentraciones', 'actividades', 'mesaredonda', 'aniversario', 'otros' );
+            $carpeta = "../imagenes/TipoEvento/";
             /* RECOGEMOS DATOS DE LA BASE DE DATOS PARA MOSTRARLOS EN LA PÁGINA */
-            for($i = 0; $i < count($eventos); $i++){
-                $id_evento = $eventos[$i]['id'];
-                $titulo_evento = $eventos[$i]['titulo'];
-                $texto_evento = $eventos[$i]['texto'];
-                $tipo_evento = $eventos[$i]['tipo'];
-        ?>
-        <!-- MOSTRAMOS DATOS EN LA PAGINA WEB -->
+            for($i = 0; $i < count($tipo_evento); $i++){
+        ?>     
         <main class="col-lg-3 col-md-6 col-sm-6 text-center mb-3 d-flex flex-wrap">  
             <section class="card bg-light">
                 <form action="" method="POST">
-                    <input type='hidden' name='id' value='<?= $id_evento ?>'>
-                    <header class="card-header"> 
-                        <?php 
-                            /* $directory="imagenes/Eventos/";
-                            $dirint = dir($directory);
-                            while (($archivo = $dirint->read()) !== false) 
-                            {
-                                if($archivo == $eventos[$i]['imagen'])
-                                { ?>
-                                    <a href="<?= $directory."/".$archivo?>" target="_blank">
-                                    <img id="imagenes-eventos" class="img-responsive" src="<?php echo $directory."/".$archivo?>" title="<?= $archivo ?>">
-                                    </a>
-                            <?php    
-                                }
-                            }
-                            $dirint->close(); */
-
-                            //NUEVA CREACION EL 23-9-19 15:28 POR ISAAC
-                            //Dependiendo del tipo de evento que seleccionamos al añadir el evento, escogeremos de la carpeta TipoEvento un logo u otro para mostrarlo en la sección de eventos de la web
-                            //ACTIVIDADES
-                            if($tipo_evento == "actividades")
-                            { 
-                    ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/actividades.png" title="Logo actividades">
-                    <?php   
-                            }
-                            //MESA REDONDA
-                            else if ($tipo_evento == "mesaredonda")
-                            {
-                    ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/mesaredonda.png" title="Logo mesa redonda">
-                    <?php
-                            }
-                            //ANIVERSARIO
-                            else if ($tipo_evento == "aniversario")
-                            {
-                    ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/aniversario.png" title="Logo aniversario">
-                    <?php
-                            }
-                            //CONCENTRACION
-                            else if ($tipo_evento == "concentracion")
-                            {
-                    ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/concentracion.png" title="Logo concentracion">
-                    <?php
-                            }
-                            //OTROS
-                            else if ($tipo_evento == "otros")
-                            {
-                    ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/otros.png" title="Logo otros">
-                    <?php
-                            }  
-                    ?> 
+                    <header class="card-header">
+                        <img id="imagenes-eventos" class="img-responsive" src="<?= $carpeta.$tipo_evento[$i].".png" ?>" title="Logo concentracion">
                     </header>   
                     <section class="card-body d-flex flex-column">
                         <header>
-                            <p class="card-title"> {{ substr($titulo_evento, 0, 30) }}... </p>
+                            <?php
+                                if($tipo_evento[$i] == "mesaredonda"){
+                                    echo "<p class='card-title'> Mesa redonda </p>";
+                                }
+                                else
+                                {
+                            ?>
+                            <p class="card-title"> {{ ucfirst($tipo_evento[$i]) }} </p>
+                            <?php
+                                }
+                            ?>
                         </header>
-                        <!-- <p class="card-text"> 
-                            <?php 
-                                // $textoEventoCorto = substr($texto_evento, 0, 20);
-                                // echo $textoEventoCorto." ...";
-                            ?> 
-                        </p> -->
                         <body>
-                            <a class="boton-even text-white p-2 border rounded mb-2" href="{{ url($titulo_evento) }}"> Ver más </a>
+                            <a class="boton-even text-white p-2 border rounded mb-2" href="{{ url("/".$tipo_evento[$i]) }}"> Ver más </a>
                         </body>
                         <footer>
-                            <span><i><small>{{ ucfirst($tipo_evento) }}</small></i></span>
+                            <span><i><small></small></i></span>
                         </footer>
                     </section>     
                 </form>

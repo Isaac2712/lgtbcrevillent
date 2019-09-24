@@ -23,7 +23,7 @@ Route::get('/acceder', ['as' => 'acceder', 'uses' => 'Usuarios\ControllerUsuario
 Route::get('/registrarse', ['as' => 'registrarse', 'uses' => 'Usuarios\ControllerUsuario@RouteRegistrarse']);
 
 //Ajax acceder
-Route::match(['get','post'], '/ajax/acceder', 'Usuarios\ControllerUsuario@Acceder');
+Route::post('/ajax/acceder', 'Usuarios\ControllerUsuario@Acceder');
 
 //Ajax provincia
 Route::post('/ajax/provincia', 'Usuarios\ControllerUsuario@Provincia');
@@ -81,7 +81,6 @@ Route::post('/ajax/anadirEvento', 'Eventos\ControllerEvento@anadirEvento');
 
 //Ajax Eliminar eventos
 Route::post('/ajax/eliminarEvento', 'Eventos\ControllerEvento@eliminarEvento');
-
 
 /* ---------- */
 /*  NOTICIAS  */
@@ -142,8 +141,26 @@ Route::post('/ajax/eliminarManifiesto', 'Manifiestos\ControllerManifiesto@elimin
 /* -------------- */
 /*  INFO-EVENTOS  */
 /* -------------- */
-//Ruta a la información del evento
-Route::get('/{evento}', 'Eventos\ControllerEvento@RouteInfoEventos');
+
+//CONCENTRACIONES
+Route::get('/concentraciones', 'Eventos\ControllerEvento@concentraciones');
+Route::get('/concentraciones/{evento}', 'Eventos\ControllerEvento@RouteInfoEventos'); /* --> info*/
+
+//ACTIVIDADES
+Route::get('/actividades', 'Eventos\ControllerEvento@actividades');
+Route::get('/actividades/{evento}', 'Eventos\ControllerEvento@RouteInfoEventos'); /* --> info*/
+
+//MESAREDONDA
+Route::get('/mesaredonda', 'Eventos\ControllerEvento@mesaredonda');
+Route::get('/mesaredonda/{evento}', 'Eventos\ControllerEvento@RouteInfoEventos'); /* --> info*/
+
+//ANIVERSARIO
+Route::get('/aniversario', 'Eventos\ControllerEvento@aniversario');
+Route::get('/aniversario/{evento}', 'Eventos\ControllerEvento@RouteInfoEventos'); /* --> info*/
+
+//OTROS
+Route::get('/otros', 'Eventos\ControllerEvento@otros');
+Route::get('/otros/{evento}', 'Eventos\ControllerEvento@RouteInfoEventos'); /* --> info*/
 
 /* ---------------- */
 /*  TABLA USUARIOS  */

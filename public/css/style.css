@@ -130,7 +130,7 @@
 }
 
 /*Imagenes de las noticias en la pagina principal*/
-#imagenes-noticias{
+#imagenes-noticias, #imagenes-tipo-evento{
    	width: 100%;
 }
 
