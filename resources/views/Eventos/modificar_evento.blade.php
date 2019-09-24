@@ -34,6 +34,20 @@
       <input type="text" class="form-control" id="horario_evento" name="horario_evento" placeholder="Horario. Ej. 16:00 a 20:00" value="{{ $evento->horario }}" required>
     </div>
 
+    <!-- Isaac 24-9-19 13:00 -->
+    <div class="form-group">
+      <section class="input-group">
+      <select class="custom-select" id="select_tipo_evento" name="select_tipo_evento">
+        <option value='{{ $evento->tipo }}' selected>Selecciona el tipo de evento</option>
+        <option value='actividades'>Actividades</option>
+        <option value='mesaredonda'>Mesa redonda</option>
+        <option value='aniversario'>Aniversario</option>
+        <option value='concentracion'>Concentración</option>
+        <option value='otros'>Otros</option>
+      </select>
+    </div>
+    <!-- /FIN Isaac 24-9-19 13:00 -->
+
     <div class="input-group mb-3">
       <input type="date" class="form-control" id="fecha_evento" name="fecha_evento" value="{{ $evento->fecha }}" aria-label="fecha_evento" aria-describedby="fecha_evento">
       <div class="input-group-prepend">

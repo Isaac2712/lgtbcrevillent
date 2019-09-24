@@ -51,7 +51,7 @@
 			</section>
 			<section class="col-12 row p-1">
 				<span class="col-4 col-md-2 text-uppercase font-weight-bold"> Descripción: </span>
-				<span class="col-8 col-md-10 pl-3 texto-info-eventos"> <pre>{{ $texto_evento }}</pre> </span>
+				<p class="col-8 col-md-10 pl-3 texto-info-eventos">{{ $texto_evento }} </p>
 			</section>
 			<section class="col-12 row p-1">
 				<span class="col-4 col-md-2 text-uppercase font-weight-bold"> Dirección: </span>

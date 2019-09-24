@@ -96,7 +96,7 @@ class ControllerEvento extends Controller
     {
         $devuelve['ok'] = 0;
         //Si ningun input esta vacio
-        if(trim($request->input('titulo_evento')) != '' && trim($request->input('localidad_evento')) != ''&& trim($request->input('texto_evento')) != '' && trim($request->input('lugar_evento')) != "" && trim($request->input('direccion_evento')) != '' && trim($request->input('telefono_evento')) != '' && trim($request->input('horario_evento')) != '' && trim($request->input('fecha_evento')) != '' && trim($request->input('id_evento')) != '')
+        if(trim($request->input('titulo_evento')) != '' && trim($request->input('localidad_evento')) != ''&& trim($request->input('texto_evento')) != '' && trim($request->input('lugar_evento')) != "" && trim($request->input('direccion_evento')) != '' && trim($request->input('telefono_evento')) != '' && trim($request->input('horario_evento')) != '' && trim($request->input('fecha_evento')) != '' && trim($request->input('id_evento')) != '' && trim($request->input('select_tipo_evento')) != '')
         {
             $modificar_evento = ModelEvento::find($request->input('id_evento'));
             $modificar_evento->titulo=$request->input('titulo_evento');
@@ -107,6 +107,7 @@ class ControllerEvento extends Controller
             $modificar_evento->telefono=$request->input('telefono_evento');
             $modificar_evento->horario=$request->input('horario_evento');
             $modificar_evento->fecha=$request->input('fecha_evento');
+            $modificar_evento->tipo=$request->input('select_tipo_evento');
             if ($request->hasFile('file')) //Si recibimos el file que es de la imagen
             {
                 $file = $request->file('file');

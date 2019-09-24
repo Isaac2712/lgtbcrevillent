@@ -12,6 +12,7 @@
           <th> # </th>
           <th> Id </th>
           <th> Titulo </th>
+          <th> Tipo </th>
           <th> Fecha </th>
           <?php 
             $url = Request::path();
@@ -34,6 +35,7 @@
         <td> {{ ($i+1) }} </td>
         <td> {{ $eventos[$i]['id'] }} </td>
         <td> {{ $eventos[$i]['titulo'] }} </td>
+        <td> {{ ucfirst($eventos[$i]['tipo']) }} </td>
         <th> {{ $eventos[$i]['fecha'] }} </th>
           <?php 
             //$url = Request::fullUrl();

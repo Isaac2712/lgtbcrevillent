@@ -50,49 +50,56 @@
                             if($tipo_evento == "actividades")
                             { 
                     ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/actividades.jpg" title="Logo actividades">
+                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/actividades.png" title="Logo actividades">
                     <?php   
                             }
                             //MESA REDONDA
                             else if ($tipo_evento == "mesaredonda")
                             {
                     ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/mesaredonda.jpg" title="Logo mesa redonda">
+                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/mesaredonda.png" title="Logo mesa redonda">
                     <?php
                             }
                             //ANIVERSARIO
                             else if ($tipo_evento == "aniversario")
                             {
                     ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/aniversario.jpg" title="Logo aniversario">
+                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/aniversario.png" title="Logo aniversario">
                     <?php
                             }
                             //CONCENTRACION
                             else if ($tipo_evento == "concentracion")
                             {
                     ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/concentracion.jpg" title="Logo concentracion">
+                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/concentracion.png" title="Logo concentracion">
                     <?php
                             }
                             //OTROS
                             else if ($tipo_evento == "otros")
                             {
                     ?>
-                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/otros.jpg" title="Logo otros">
+                                <img id="imagenes-eventos" class="img-responsive" src="imagenes/TipoEvento/otros.png" title="Logo otros">
                     <?php
                             }  
                     ?> 
                     </header>   
-                    <section class="card-body">
-                        <p class="card-title"> <?= $titulo_evento ?> </p>
+                    <section class="card-body d-flex flex-column">
+                        <header>
+                            <p class="card-title"> {{ substr($titulo_evento, 0, 30) }}... </p>
+                        </header>
                         <!-- <p class="card-text"> 
                             <?php 
                                 // $textoEventoCorto = substr($texto_evento, 0, 20);
                                 // echo $textoEventoCorto." ...";
                             ?> 
                         </p> -->
-                        <a class="boton-even text-white p-2 border float-right rounded mb-2" href="{{ url($titulo_evento) }}"> Ver más </a>
-                    </section>       
+                        <body>
+                            <a class="boton-even text-white p-2 border rounded mb-2" href="{{ url($titulo_evento) }}"> Ver más </a>
+                        </body>
+                        <footer>
+                            <span><i><small>{{ ucfirst($tipo_evento) }}</small></i></span>
+                        </footer>
+                    </section>     
                 </form>
             </section>
         </main>
