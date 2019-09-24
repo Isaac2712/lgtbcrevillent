@@ -251,17 +251,17 @@ class ControllerUsuario extends Controller
     }
 
     public function contraseñaOlvidada(){
-        return view('cambiar_contraseña');
+        return view('cambiar_contrasena');
     }
 
     public function buscarEmail(Request $request){
         $email = ModelUsuario::where('email', $request->input('email'))->get();
         if($email->count()!=0)
         {
-            return view('nueva_contraseña', ['email' => $email]);
+            return view('nueva_contrasena', ['email' => $email]);
         }
 
-        return view('cambiar_contraseña', ['mensaje' => 'No existe el email del usuario, crea un nuevo usuario.']);
+        return view('cambiar_contrasena', ['mensaje' => 'No existe el email del usuario, crea un nuevo usuario.']);
     }
 
     public function cambiarContraseña(Request $request)
