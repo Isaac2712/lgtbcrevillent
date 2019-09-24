@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>LGTBCREVILLENT</title>
-        <link rel="icon" href="{{ asset('imagenes/LOGO.jpg') }}" type="image/gif" sizes="16x16">
+        <link rel="icon" href="{{ asset('imagenes/LOGO.png') }}" type="image/gif" sizes="16x16">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link href="{{ asset('favicon/css/all.css') }}" rel="stylesheet"> <!--load all styles -->
@@ -13,8 +13,8 @@
     <body class="container bg-dark text-white mt-3">
     <?php if(!isset($_SESSION['nick_usuario'])){ ?>
         <section id="app" class="col-md-7 col-lg-5 m-auto">
-            <header class="mb-3">
-                <img class="card-img-top" src="/imagenes/LOGO.jpg" title="Inicio"/>
+            <header class="mb-3 text-center">
+                <img class="card-img-top w-50" src="/imagenes/LOGO.png" title="LGTBCrevilent"/>
             </header>
             <main>
                 <form method="POST">

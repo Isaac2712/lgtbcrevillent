@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 	<title>LGTBCREVILLENT</title>
-	<link rel="icon" href="{{ asset('imagenes/LOGO.jpg') }}" type="image/gif" sizes="16x16">
+	<link rel="icon" href="{{ asset('imagenes/LOGO.png') }}" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link href="{{ asset('favicon/css/all.css') }}" rel="stylesheet"> <!--load all styles -->
@@ -32,7 +32,7 @@
 <header> <!-- sticky-top hace que el header vaya hacia abajo -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <a class="navbar-brand" href="{{ route('home') }}">
-          <img class='imagen-index' src="/imagenes/LOGO.jpg" width="100px" height="50px" title="Inicio"/>
+          <img class='imagen-index' src="/imagenes/LOGO.png" width="100px" height="50px" title="Inicio"/>
           <span class="title-nav ml-3"> LGTB Crevillent </span>
       </a>
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf-token" content="{{ csrf_token() }}">
 	<title>LGTBCREVILLENT</title>
-	<link rel="icon" href="{{ asset('imagenes/LOGO.jpg') }}" type="image/gif" sizes="16x16">
+	<link rel="icon" href="{{ asset('imagenes/LOGO.png') }}" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link href="{{ asset('favicon/css/all.css') }}" rel="stylesheet"> <!--load all styles -->
@@ -18,7 +18,7 @@
 
     <main class="pt-4">
       <figure class="figure">
-        <img src="/imagenes/LOGO.jpg" class="figure-img img-fluid rounded" alt="LgtbCrevillent" width="40%">
+        <img src="/imagenes/LOGO.png" class="figure-img img-fluid rounded" alt="LgtbCrevillent" width="40%">
         <figcaption class="figure-caption">LgtbCrevillent</figcaption>
       </figure>
     </main>
