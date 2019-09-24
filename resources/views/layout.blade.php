@@ -91,23 +91,23 @@
         </aside>
         <aside class="col-md-5 col-lg-6 text-center text-md-right">
           <!-- Facebook -->
-          <a id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()"  class="p-2" href="https://es-es.facebook.com/LGTBCREVILLENT/" class="fb-ic">
+          <a target="_blank" id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()"  class="p-2" href="https://es-es.facebook.com/LGTBCREVILLENT/" class="fb-ic">
             <i class="fab fa-facebook-f white-text mr-4"> </i>
           </a>
           <!-- Twitter -->
-          <a id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="https://twitter.com/crevillentlgtb?lang=es">
+          <a target="_blank" id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="https://twitter.com/crevillentlgtb?lang=es">
             <i class="fab fa-twitter white-text mr-4"> </i>
           </a>
           <!-- Google +-->
-          <a id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="https://plus.google.com/107742714242312412984">
+          <a target="_blank" id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="https://plus.google.com/107742714242312412984">
             <i class="fab fa-google-plus-g white-text mr-4"> </i>
           </a>
           <!--Instagram-->
-          <a id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="">
+          <a target="_blank" id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="">
             <i class="fab fa-instagram white-text mr-4"> </i>
           </a>
           <!--Youtube-->
-          <a id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="https://www.youtube.com/channel/UCl2qNdR0cVu9WxVO2yWkJAw">
+          <a target="_blank" id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="https://www.youtube.com/channel/UCl2qNdR0cVu9WxVO2yWkJAw">
             <i class="fab fa-youtube white-text"> </i>
           </a>
         </aside>

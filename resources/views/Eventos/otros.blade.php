@@ -1,7 +1,7 @@
 @extends('layout')
 @section('contenido')
 <!-- SECCION DE OTROS -->
-<section class="container-fluid">
+<section class="container-fluid mb-5">
     <header class="container-fluid">
     <hr class="mt-5">
     <main class="row">
@@ -35,7 +35,7 @@
                             { 
                         ?>
                             <a href="<?= $directory."/".$archivo?>" target="_blank">
-                            <img id="imagenes-noticias"  class="img-responsive" src="<?php echo $directory."/".$archivo?>" title="<?= $archivo ?>">
+                            <img id="imagenes-tipo-evento"  class="img-responsive" src="<?php echo $directory."/".$archivo?>" title="<?= $archivo ?>">
                             </a>
                         <?php
                                 }

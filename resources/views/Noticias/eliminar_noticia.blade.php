@@ -25,7 +25,6 @@
             $titulo_noticia = $noticias[$i]['titulo'];
             echo "<option id='noticia' value='{$id_noticia}'>$titulo_noticia</option>";
           }
-          
        ?>
     </select>
 

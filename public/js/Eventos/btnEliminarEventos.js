@@ -47,7 +47,7 @@ function btnSiEliminamosEvento(){
         if(respuesta.ok == 1)
         {
           $('#resultado_eliminar_evento').html("<br><div class='alert alert-success mt-0 w-100' role='alert' id='resultado_eliminar_evento'> ¡Has eliminado el evento! </div>").show().delay(5000).fadeOut("fast");
-          setTimeout("location.reload()", 5000);
+          setTimeout("location.reload()", 1000);
         }
         else
         {

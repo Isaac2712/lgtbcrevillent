@@ -12,7 +12,7 @@
     </main>
     <hr class="mb-4">
     </header>
-    <article id="articulo-quienes-somos" class="pr-3 pl-3">
+    <article class="pr-3 pl-3">
         <p>LGTB Crevillent, colectivo de lesbianas, gays, transexuales y bisexuales es una <b> asociación privada sin ánimo de lucro que se constituye el 6 de marzo de 2015 </b> motivada por la situación de discriminación y marginación social que sufriamos las personas con orientaciones sexuales, identidades y/o expresiones de género diversas en poblaciones inferiores a 30.000 habitantes.</p>
         <p>Nuestra razón de ser pasa por:</p>
         <p>
@@ -58,8 +58,9 @@
                 <li>Defendemos la educación en valores de igualdad efectiva, respeto y libertad.</li>
             </ul>
         </p>
-
-        <h3>Servicios que ofrecemos:</h3>
+        <br>
+        <h4>Servicios que ofrecemos:</h4>
+        <br>
         <p>El servicio de información es una de las comisiones fundamentales ya que es la puerta de entrada al colectivo.Los voluntarios/as que la forman se encuentran permanentemente para recibir y/o atender a los usuarios; por ello, somos el primer contacto, ya sea presencial, telefónico o virtual para todos los usuarios que acuden por primera vez, y también para los nuevos voluntarios. En el despacho, atendemos consultas sobre cualquier tema LGTB convirtiéndonos en punto de referencia para muchos usuarios con diversas necesidades psicosociales que se acercan al colectivo.</p>
 
         <p> Desarrollamos nuestra actividad desde diversas fuentes: </p>
@@ -72,25 +73,25 @@
                 <ul>
                     <li>
                         <b>Facebook:</b>
-                        <a id="" class="p-2" href="https://es-es.facebook.com/LGTBCREVILLENT/" class="fb-ic">
+                        <a target="_blank" class="p-2" href="https://es-es.facebook.com/LGTBCREVILLENT/" class="fb-ic">
                             <i class="fab fa-facebook-f white-text mr-4"> </i>
                         </a>
                     </li>
                     <li>
                         <b>Twitter:</b>
-                        <a id="" class="p-2" href="https://twitter.com/crevillentlgtb?lang=es">
+                        <a target="_blank" class="p-2" href="https://twitter.com/crevillentlgtb?lang=es">
                             <i class="fab fa-twitter white-text mr-4"> </i>
                         </a>
                     </li>
                     <li>
                         <b>Instagram:</b>
-                        <a id="" class="p-2" href="">
+                        <a target="_blank" class="p-2" href="">
                             <i class="fab fa-instagram white-text mr-4"> </i>
                         </a>
                     </li>
                     <li>
                         <b>Youtube:</b>
-                        <a id="" class="p-2" href="https://www.youtube.com/channel/UCl2qNdR0cVu9WxVO2yWkJAw">
+                        <a target="_blank" class="p-2" href="https://www.youtube.com/channel/UCl2qNdR0cVu9WxVO2yWkJAw">
                             <i class="fab fa-youtube white-text"> </i>
                         </a>
                     </li>

@@ -25,7 +25,6 @@
             $titulo_evento = $eventos[$i]['titulo'];
             echo "<option id='evento' value='{$titulo_evento}'>$titulo_evento</option>";
           }
-          
        ?>
     </select>
 
