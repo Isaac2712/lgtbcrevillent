@@ -85,7 +85,7 @@
                     </li>
                     <li>
                         <b>Instagram:</b>
-                        <a target="_blank" class="p-2" href="">
+                        <a target="_blank" class="p-2" href="https://www.instagram.com/lgtbcrevillent/">
                             <i class="fab fa-instagram white-text mr-4"> </i>
                         </a>
                     </li>

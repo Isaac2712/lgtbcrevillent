@@ -103,7 +103,7 @@
             <i class="fab fa-google-plus-g white-text mr-4"> </i>
           </a>
           <!--Instagram-->
-          <a target="_blank" id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="">
+          <a target="_blank" id="icono-redes-sociales-footer" onmouseover="RedesSocialesFooterHover()" onmouseout="RedesSocialesFooterSinHover()" class="p-2" href="https://www.instagram.com/lgtbcrevillent/">
             <i class="fab fa-instagram white-text mr-4"> </i>
           </a>
           <!--Youtube-->
