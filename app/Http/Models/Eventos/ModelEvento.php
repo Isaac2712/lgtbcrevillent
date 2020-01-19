@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ModelEvento extends Model
 {
   protected $table = 'eventos';
-  protected $primaryKey = 'id';
+  protected $primaryKey='id';
 
 
   //const CREATED_AT = 'FechaAltaEvento';

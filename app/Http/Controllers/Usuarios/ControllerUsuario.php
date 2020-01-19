@@ -263,7 +263,7 @@ class ControllerUsuario extends Controller
 
         return view('cambiar_contrasena', ['mensaje' => 'No existe el email del usuario, crea un nuevo usuario.']);
     }
-
+    
     public function cambiarContraseña(Request $request)
     {
         if(trim($request->input('id_usuario')) != '' && trim($request->input('contraseña')) != '' && trim($request->input('contraseña2')) != '')
