@@ -1,0 +1,4 @@
+Actualizar proyecto
+
+php composer.phar update dentro de lgtbcrevillent
+despues lo subimos a git
