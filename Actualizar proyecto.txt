@@ -1,4 +1,5 @@
 Actualizar proyecto
 
+Hay que tener instalado en la máquina actual PHP y COMPOSER.
 php composer.phar update dentro de lgtbcrevillent
 despues lo subimos a git
